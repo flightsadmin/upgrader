@@ -1,0 +1,29 @@
+{
+    "name": "flightsadmin/upgrader",
+    "description": "Upgrade CodeIgniter 3 to CodeIgniter 4",
+    "keywords": [
+        "flightsadmin",
+        "upgrader"
+    ],
+    "homepage": "https://github.com/flightsadmin/generator",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "George Chitechi",
+            "email": "flightsapps@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flightsadmin\\Upgrader\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
