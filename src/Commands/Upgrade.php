@@ -2,17 +2,20 @@
 
 namespace Flightsadmin\Upgrader\Commands;
 
-use RecursiveDirectoryIterator;
-use RecursiveIteratorIterator;
-
-use CodeIgniter\CLI\BaseCommand;
-use CodeIgniter\CLI\CLI;
 use Config\Database;
-use Flightsadmin\Upgrade\Helper;
+use CodeIgniter\CLI\CLI;
+
+use RecursiveIteratorIterator;
+use RecursiveDirectoryIterator;
+use CodeIgniter\CLI\BaseCommand;
+use Flightsadmin\Upgrader\Commands\UpgradeView;
+use Flightsadmin\Upgrader\Commands\UpgradeModel;
+use Flightsadmin\Upgrader\Commands\UpgradeHelper;
+use Flightsadmin\Upgrader\Commands\UpgradeController;
 
 class Upgrade extends BaseCommand
 {
-    use Helper;
+    use UpgradeHelper, UpgradeModel, UpgradeController, UpgradeView;
 
 	protected $group 		= 'upgraders';
 	protected $name 		= 'upgrader:install';

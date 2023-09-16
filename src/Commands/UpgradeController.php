@@ -5,7 +5,7 @@ namespace Flightsadmin\Upgrader\Commands;
 use Config\Autoload;
 use Config\Services;
 
-trait UpgradeControllers
+trait UpgradeController
 {
     public function upgradeControllers($ci4folderName, $ci3folderName) {
 

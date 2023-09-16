@@ -5,7 +5,7 @@ namespace Flightsadmin\Upgrader\Commands;
 use Config\Autoload;
 use Config\Services;
 
-trait UpgradeViews
+trait UpgradeView
 {
     public function upgradeViews($ci4folderName, $ci3folderName) {
 

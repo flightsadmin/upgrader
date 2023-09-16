@@ -5,7 +5,7 @@ namespace Flightsadmin\Upgrader\Commands;
 use Config\Autoload;
 use Config\Services;
 
-trait Helper
+trait UpgradeHelper
 {
     public function startUpgrade() {
         // Prompt the user to enter a name
