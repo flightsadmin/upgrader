@@ -25,7 +25,7 @@ class Upgrade extends BaseCommand
 	public function run(array $params)
 	{
 		try {
-			if (CLI::prompt('Hello, Do you want to proceed?', ['y', 'n']) == 'y')
+			if (CLI::prompt('If you want to upgrade local project, copy it to root of your CI4, Do you want to proceed?', ['y', 'n']) == 'y')
 				{				    
                     $this->startUpgrade();
 
