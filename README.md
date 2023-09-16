@@ -1,32 +1,42 @@
-# Upgrader
-**Upgrader** is a command line php package to Upgrade Codeigniter3 applications to Codeigniter4.
+# Very short description of the package
 
-This package will copy Models, Views and Controllers inside your Codeigniter 3 App into Codeigniter 4
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/flightsadmin/upgrader.svg?style=flat-square)](https://packagist.org/packages/flightsadmin/upgrader)
+[![Total Downloads](https://img.shields.io/packagist/dt/flightsadmin/upgrader.svg?style=flat-square)](https://packagist.org/packages/flightsadmin/upgrader)
+![GitHub Actions](https://github.com/flightsadmin/upgrader/actions/workflows/main.yml/badge.svg)
 
-## Functionalities / Roadmap
+This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
- - [x] Copy Models
- - [x] Copy Views
- - [x] Copy Controllers
- - [x] Update Config Files
- - [x] Update .env Files
- - [ ] Update Language Files
- - [ ] Update Database Files
- 
+## Installation
+
+You can install the package via composer:
+
+```bash
+composer require flightsadmin/upgrader
+```
 
 ## Usage
- 1-  Clone this package into a folder in you computer (Ensure you have git installed, Otherwise download the Zip file from [Github](https://github.com/flightsadmin/upgrader))
- 
-  ```bash 
-  git clone https://github.com/flightsadmin/upgrader.git
-  ```
 
-2- Save your Codeigniter 3 project in the same folder as your cloned package.
+```php
+// Usage description here
+```
 
-3- Open Command prompt and type `php index.php` (Ensure you are in the root Directory of your cloned project)
+### Testing
 
-## Start using it  
-The package will copy all files and folders and Upgrade them to Codeigniter 4. 
+```bash
+composer test
+```
+
+### Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+### Security
+
+If you discover any security related issues, please email george@flightadmin.info instead of using the issue tracker.
 
 ## Credits
 

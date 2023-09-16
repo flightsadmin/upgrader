@@ -5,23 +5,36 @@
         "flightsadmin",
         "upgrader"
     ],
-    "homepage": "https://github.com/flightsadmin/generator",
+    "homepage": "https://github.com/flightsadmin/upgrader",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
             "name": "George Chitechi",
-            "email": "flightsapps@gmail.com",
+            "email": "george@flightadmin.info",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^7.4|^8.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
     "autoload": {
         "psr-4": {
             "Flightsadmin\\Upgrader\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Flightsadmin\\Upgrader\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
     },
     "config": {
         "sort-packages": true

@@ -19,13 +19,13 @@ function deleteFolder($dir) {
 // Download and extract CodeIgniter 4 source code
 function downloadCodeigniter($ci4folderName)
 {
-    $ci4_zip_url = 'https://github.com/codeigniter4/appstarter/archive/refs/tags/v4.3.1.zip';
+    $ci4_zip_url = 'https://github.com/codeigniter4/appstarter/archive/refs/tags/v4.4.1.zip';
     file_put_contents('ci4.zip', fopen($ci4_zip_url, 'r'));
     $zip = new ZipArchive();
     $zip->open('ci4.zip');
     $zip->extractTo('.');
     $zip->close();
-    rename('appstarter-4.3.1', $ci4folderName);
+    rename('appstarter-4.4.1', $ci4folderName);
     unlink('ci4.zip');
 }
 
